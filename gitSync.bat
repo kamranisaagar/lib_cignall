@@ -1,4 +1,4 @@
-cd C:/merchantpulse/lib
+cd C:/merchantpulse/lib_cignall
 
 net stop MpulseJob
 

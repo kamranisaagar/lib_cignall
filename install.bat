@@ -10,11 +10,11 @@ set JAVA_HOME=%JAVAW_PATH%
 
 set CD=C:\merchantpulse
 set CLASSPATH=.
-set CLASSPATH=%CLASSPATH%;%CD%\lib\*.jar
+set CLASSPATH=%CLASSPATH%;%CD%\lib_cignall\*.jar
 
 cd %CD%\lib
 
-nssm install MpulseJob "%JAVA_HOME%"  -cp "%CLASSPATH%" -jar -Dconfig.home="c:/merchantpulse" "%CD%"\lib\CignallScripts-1.0-SNAPSHOT.jar
+nssm install MpulseJob "%JAVA_HOME%"  -cp "%CLASSPATH%" -jar -Dconfig.home="c:/merchantpulse" "%CD%"\lib_cignall\CignallScripts-1.0-SNAPSHOT.jar
 nssm start MpulseJob
 
 
